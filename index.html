@@ -11,30 +11,27 @@
     <header></header>
     <main class="main_desencriptador">
     <section class="textarea">
-        <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-        <div>
+        <textarea class="texto"name="texto" id="texto" cols="30" rows="10" type="text" placeholder="Ingrese el texto aqui"></textarea>
+        <div class="condiciones">
             <p>solo letras minusculas y acentos.</p>
         </div>
         <div class="botones">
-            <button class="boton_encriptar" type="button" onclick="encriptar()">Encriptar</button>
-            <button class="boton_Desencriptar" type="botton" onclick="desciptar()">Desencriptar</button>
+            <button class="boton_encriptar" type="button" onclick="encriptar();" onclick="cambiarStyle();">Encriptar</button>
+            <button class="boton_Desencriptar" type="botton" onclick="desencriptar();"onclick="cambiarStyle();">Desencriptar</button>
          </div>
     </section>
-    <section class="texto_procesado">
-        <img src="" alt="" id="imagen_texto">
-        <div class="mesaje_encriptado" id="mensaje_encriptado">
-            <h2 id="titulo_mensaje">ningun mesanje encontrado</h2>
-            <p>ingresa el texto que deseas encriptar o desencriptar</p>
-
-            <textarea name="mesaje" id="mensaje" cols="30" rows="10" class="mesanje"></textarea>
+    <section class="texto_procesado" id="texto_procesado">
+        <img src=".//assets/Muñeco.png" alt="no fue encontrado un mensaje" id="imagen_texto">
+        <div class="mensaje_encriptado" id="mensaje_encriptado">
+            <h2 id="titulo_mensaje">ningun mesanje fue encontrado</h2>
+            <p id="parrafo">ingresa el texto que deseas encriptar o desencriptar</p>
+            <textarea id="textarea_oculto" class="hidden" name="texto" cols="30" rows="10" placeholder=" " readonly></textarea>
         </div>
-        <button>Copiar</button>
     </section>
-    </main>
+     </main>
     <footer>
         <h3>creado por roman zorrilla</h3>
     </footer>
-
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
